@@ -1,0 +1,42 @@
+/* ViewItemPage.css */
+
+.view-item-page {
+  width: 80%;
+  margin: 20px auto;
+}
+
+.view-item-page h2 {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.view-item-page table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 20px;
+  font-size: 16px; /* Increase font size */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Add shadow for depth */
+}
+
+.view-item-page th, .view-item-page td {
+  padding: 12px; /* Increase padding */
+  border: 2px solid #f7f3f3;
+  text-align: left;
+  white-space: nowrap; /* Prevent text wrapping */
+  overflow: hidden; /* Hide overflow content */
+  text-overflow: ellipsis; 
+  background-color:wheat;/* Display ellipsis for overflow text */
+}
+
+.view-item-page th {
+  background-color: #f2f2f2;
+}
+
+.view-item-page tbody tr:nth-child(even) {
+  background-color: #f9f9f9;
+}
+
+.view-item-page p {
+  text-align: center;
+  margin-top: 20px;
+}
