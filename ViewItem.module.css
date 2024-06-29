@@ -1,0 +1,88 @@
+.viewItemPage {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start; /* Align content at the top */
+  align-items: center; /* Center items horizontally */
+  min-height: 100vh;
+  margin: 5px;
+  padding: 20px;
+  background-color: #e29d9d;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between; /* Spread items across the header */
+  align-items: center;
+  padding: 10px 20px;
+  background-color: #d27a7a;
+  width: 100%; /* Full width */
+  justify-content: flex-end;
+}
+
+.navbar {
+  display: flex;
+  align-items: center;
+}
+
+.navLinks {
+  list-style-type: none;
+  display: flex;
+  padding: 0;
+  margin: 0;
+}
+
+.navLink {
+  text-decoration: none;
+  color: #ededed;
+  padding: 10px 15px;
+  border-radius: 4px;
+  font-size: 17px;
+  transition: background-color 0.3s ease;
+}
+
+.navLink:hover {
+  background-color: #5c93cb;
+}
+
+.logoutButton {
+  background-color: #dc3545;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  margin-left: 10px; /* Add margin between links and button */
+}
+
+.logoutButton:hover {
+  background-color: #c82333;
+}
+
+.tableContainer {
+  width: 80%;
+  margin-top: 20px;
+  text-align: center; /* Center text content horizontally */
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  background-color: #fff;
+  border-radius: 4px;
+}
+
+th, td {
+  border: 1px solid #ddd;
+  padding: 12px;
+  text-align: center;
+}
+
+th {
+  background-color: #f2f2f2;
+  color: #333;
+}
+
+tr:hover {
+  background-color: #f9f9f9;
+}

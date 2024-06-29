@@ -1,0 +1,186 @@
+/* ViewItemAdmin.module.css */
+
+.container {
+  max-width: 800px;
+  margin: 100px auto 20px auto; /* Center the container vertically and horizontally */
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  background-color: #f4bbbb;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Add a subtle shadow */
+}
+
+.itemsTableContainer {
+  margin-top: 20px;
+  overflow-x: auto; /* Enable horizontal scrolling if necessary */
+}
+
+.itemsTable {
+  width: 100%;
+  max-width: 100%; /* Ensure table does not exceed its container */
+  border-collapse: collapse;
+
+  border-radius: 4px;
+}
+
+.itemsTable th,
+.itemsTable td {
+  padding: 10px;
+  text-align: left;
+  border-bottom: 1px solid #ccc;
+}
+
+.itemsTable th {
+  background-color: #ed8585;
+  color:#302929;
+}
+
+.itemsTable td {
+  border-bottom: 1px solid #ccc;
+}
+
+
+/* ViewItemAdmin.module.css */
+
+.editFormContainer {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: #fff;
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  z-index: 1000; /* Ensure it's above other content */
+}
+
+.editForm {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.editForm label {
+  margin-bottom: 8px;
+  font-weight: 600;
+}
+
+.editForm input {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+.editForm button {
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  cursor: pointer;
+  border-radius: 4px;
+  font-size: 16px;
+  transition: background-color 0.3s ease-in-out;
+}
+
+.editForm button:hover {
+  background-color: #0056b3;
+}
+
+
+
+
+
+
+.actionColumn {
+  white-space: nowrap;
+}
+
+.actionButtons {
+  display: flex;
+}
+
+.actionButtons button {
+  margin-right: 10px;
+  padding: 6px 10px;
+  cursor: pointer;
+}
+
+.actionLink {
+  color: #007bff;
+  cursor: pointer;
+}
+
+.actionSeparator {
+  margin: 0 5px;
+  color: #302929;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .container {
+    padding: 10px;
+  }
+
+  .itemsTable {
+    font-size: 14px;
+  }
+
+  .actionButtons button {
+    padding: 4px 8px;
+  }
+}
+
+
+/* Styles for the header */
+.navbar {
+  background-color: #333;
+  position: fixed;
+  width: 100%;
+  top: 0;
+  z-index: 1000;
+}
+
+.navLinks {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  padding: 10px 20px;
+}
+
+.navLinks li {
+  margin-left: 25px;
+}
+
+.navLinks li:first-child {
+  margin-left: 0;
+}
+
+.navLink {
+  color: white;
+  text-decoration: none;
+  font-size: 16px;
+  transition: color 0.3s;
+}
+
+.navLink:hover {
+  color: #ff6347;
+}
+
+.logoutButton {
+  background-color: #ff6347;
+  color: white;
+  border: none;
+  padding: 8px 16px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.logoutButton:hover {
+  background-color: #ff4500;
+}
