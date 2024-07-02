@@ -1,0 +1,84 @@
+html, body {
+  height: 100%;
+  margin: 1px;
+  padding: 0;
+}
+
+.userWelcomeContainer {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 100vh;
+  margin: 5px;
+  background-color: #e29d9d;
+}
+
+.header {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  padding: 10px 20px;
+  background-color: #d27a7a;
+
+}
+
+.navbar {
+  display: flex;
+}
+
+.navLinks {
+  list-style-type: none;
+  display: flex;
+  padding: 0;
+  margin: 0;
+}
+
+.navLink {
+  text-decoration: none;
+  color: #ededed;
+  padding: 10px 15px;
+  border-radius: 4px;
+  font-size: 17px;
+  transition: background-color 0.3s ease;
+}
+
+.navLink:hover {
+  background-color: #5c93cb;
+}
+
+.logoutButton {
+  background-color: #dc3545;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.logoutButton:hover {
+  background-color: #c82333;
+}
+
+.content {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+
+  font-size: larger;
+  border-radius: 8px;
+  margin: 20px;
+}
+
+.content h1{
+  font-size: 32px;
+  color: #c82333;
+}
+.welcomeMessage {
+  text-align: center;
+  font-size: 24px;
+  color: #333;
+  margin: 0;
+}
