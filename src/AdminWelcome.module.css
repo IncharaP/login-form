@@ -1,0 +1,73 @@
+.adminWelcomeContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center; /* Center content horizontally */
+  min-height: 100vh;
+  background-color: #f0f0f0;
+}
+
+.header {
+  width: 100%;
+  background-color: #333;
+  position: fixed; /* Fixed position for the header */
+  top: 0;
+  z-index: 1000; /* Ensure header is on top */
+}
+
+.navbar {
+  display: flex;
+  justify-content: flex-end; /* Align navigation links to the right */
+  align-items: center;
+  padding: 10px 20px;
+
+
+}
+
+.navLinks {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  padding: 10px;
+  justify-content: space-between; /* Ensure links are displayed in a row */
+}
+
+.navLinks li {
+  margin-left: 25px; /* Add spacing between links */
+}
+
+.navLink {
+  color: white;
+  text-decoration: none;
+  font-size: 16px;
+  transition: color 0.3s;
+}
+
+.navLink:hover {
+  color: #ff6347; /* Tomato color on hover */
+}
+
+.logoutButton {
+  background-color: #ff6347;
+  color: white;
+  border: none;
+  padding: 8px 16px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.logoutButton:hover {
+  background-color: #ff4500; /* Darker tomato color on hover */
+}
+
+.content {
+  margin-top: 80px; /* Adjust margin top to give space for fixed header */
+  text-align: center;
+  padding: 20px;
+}
+
+.content h1 {
+  font-size: 2em;
+  color: #333;
+  margin-top: 200px;
+}

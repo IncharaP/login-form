@@ -1,0 +1,152 @@
+/* Styles for the header */
+.navbar {
+  background-color: #333;
+  position: fixed;
+  width: 100%;
+  top: 0;
+  z-index: 1000;
+}
+
+.navLinks {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  padding: 10px 20px;
+}
+
+.navLinks li {
+  margin-left: 25px;
+}
+
+.navLinks li:first-child {
+  margin-left: 0;
+}
+
+.navLink {
+  color: white;
+  text-decoration: none;
+  font-size: 16px;
+  transition: color 0.3s;
+}
+
+.navLink:hover {
+  color: #ff6347;
+}
+
+.logoutButton {
+  background-color: #ff6347;
+  color: white;
+  border: none;
+  padding: 8px 16px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.logoutButton:hover {
+  background-color: #ff4500;
+}
+
+/* Styles for the main content */
+/* ViewItemAdmin.module.css */
+
+.container {
+  margin: 100px auto;
+  padding: 10px;
+  max-width: 1200px; /* Increase max-width for better layout */
+}
+
+.itemsTableContainer {
+  margin-top: 30px;
+}
+
+.itemsTable {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.itemsTable th,
+.itemsTable td {
+  border: 1px solid #ccc;
+  padding: 8px;
+  text-align: left;
+}
+
+.itemsTable th {
+  background-color: #f4f4f4;
+}
+
+.editableColumn input,
+.editableColumn textarea {
+  width: 100%;
+  padding: 8px;
+  font-size: 14px; /* Adjust font size for input fields */
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box; /* Ensure padding and border are included in width */
+}
+
+.imageColumn {
+  width: 120px; /* Set fixed width for image column */
+}
+
+.itemImage,
+.editImage,
+.editImagePreview {
+  max-width: 100px; /* Adjust max-width for item images */
+  height: auto;
+  margin-bottom: 5px;
+}
+
+.imageUploadInput {
+  margin-bottom: 10px;
+}
+
+.actionColumn {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.actionLink {
+  color: #007bff;
+  cursor: pointer;
+  text-decoration: none;
+}
+
+.actionLink:hover {
+  text-decoration: underline;
+}
+
+.actionSeparator {
+  margin: 0 5px;
+}
+
+.actionButtons {
+  display: flex;
+  gap: 10px;
+}
+
+.saveButton,
+.cancelButton {
+  background-color: #4CAF50;
+  color: white;
+  border: none;
+  padding: 8px 16px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.saveButton:hover {
+  background-color: #45a049;
+}
+
+.cancelButton {
+  background-color: #ff6347;
+}
+
+.cancelButton:hover {
+  background-color: #ff4500;
+}
