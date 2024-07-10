@@ -1,0 +1,162 @@
+/* Styles for the header */
+.navbar {
+  background-color: #333;
+  position: fixed;
+  width: 100%;
+  top: 0;
+  z-index: 1000;
+}
+
+.navLinks {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  padding: 10px 20px;
+}
+
+.navLinks li {
+  margin-left: 25px;
+}
+
+.navLinks li:first-child {
+  margin-left: 0;
+}
+
+.navLink {
+  color: white;
+  text-decoration: none;
+  font-size: 16px;
+  transition: color 0.3s;
+}
+
+.navLink:hover {
+  color: #ff6347;
+}
+
+.logoutButton {
+  background-color: #ff6347;
+  color: white;
+  border: none;
+  padding: 8px 16px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.logoutButton:hover {
+  background-color: #ff4500;
+}
+
+
+
+/* Styles for the main content */
+/* Styles for the main content */
+.itemsContainer {
+ 
+  max-width: 1200px;
+  margin: 20px auto;
+  padding: 20px;
+  width: 90%;
+  margin-top: 100px;
+  background-color: #f6f1f1;
+}
+.itemsTable {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 20px;
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+}
+
+.itemsTable th,
+.itemsTable td {
+  padding: 12px;
+  text-align: left;
+  vertical-align: middle;
+  border-bottom: 1px solid #ddd;
+}
+
+.itemsTable th {
+  background-color: #f0f0f0;
+  font-weight: bold;
+}
+
+.itemImage {
+  width: 100px;
+  height: 100px;
+  object-fit: cover;
+  border-radius: 4px;
+  border: 1px solid #ddd;
+}
+
+.editItemContainer {
+  max-width: 600px;
+  margin: 20px auto;
+  padding: 20px;
+  background-color: #f9f9f9;
+  border-radius: 8px;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+}
+
+.editItemForm {
+  display: flex;
+  flex-direction: column;
+}
+
+.formGroup {
+  margin-bottom: 15px;
+}
+
+.formGroup label {
+  margin-bottom: 8px;
+  display: block;
+  font-weight: bold;
+}
+
+.formGroup input,
+.formGroup textarea {
+  padding: 8px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  font-size: 14px;
+}
+
+.formGroup input[type="file"] {
+  margin-top: 8px;
+}
+
+.imagePreview {
+  max-width: 100px;
+  max-height: 100px;
+  object-fit: cover;
+  border-radius: 4px;
+  border: 1px solid #ddd;
+  margin-top: 8px;
+}
+
+.editItemForm button {
+  padding: 8px 16px;
+  margin-top: 12px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  background-color: #007bff;
+  color: #fff;
+  transition: background-color 0.3s;
+}
+
+.editItemForm button:hover {
+  background-color: #0056b3;
+}
+
+.editItemForm button[type="button"] {
+  margin-left: 10px;
+  background-color: #6c757d;
+}
+
+.editItemForm button[type="button"]:hover {
+  background-color: #5a6268;
+}
