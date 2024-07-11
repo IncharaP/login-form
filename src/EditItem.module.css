@@ -1,0 +1,30 @@
+.editItemPage {
+    padding: 20px;
+  }
+  
+  .editItemPage h2 {
+    margin-bottom: 20px;
+  }
+  
+  .editItemPage form {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .editItemPage label {
+    margin-bottom: 10px;
+  }
+  
+  .editItemPage input {
+    padding: 8px;
+    margin-top: 5px;
+  }
+  
+  .editItemPage button {
+    padding: 10px;
+    background-color: #4CAF50;
+    border: none;
+    color: white;
+    cursor: pointer;
+  }
+  
