@@ -1,0 +1,90 @@
+html, body {
+  height: 100%;
+  margin: 1px;
+  padding: 0;
+}
+
+.userWelcomeContainer {
+  background-size: cover;
+  background-position: center;
+  min-height: 100vh; /* Ensures the background covers the entire viewport height */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+margin-top: 10px;
+  text-align: center;
+  margin: 5px;
+  background-image: url('./assets/userbg.jpg');
+}
+
+.header {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  padding: 10px 20px;
+  background-color: #546a9a;
+  margin-top: 20px;
+
+}
+
+.navbar {
+  display: flex;
+}
+
+.navLinks {
+  list-style-type: none;
+  display: flex;
+  padding: 0;
+  margin: 0;
+}
+
+.navLink {
+  text-decoration: none;
+  color: #ededed;
+  padding: 10px 15px;
+  border-radius: 4px;
+  font-size: 17px;
+  transition: background-color 0.3s ease;
+}
+
+.navLink:hover {
+  background-color: #5c93cb;
+}
+
+.logoutButton {
+  background-color: #dc3545;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.logoutButton:hover {
+  background-color: #c82333;
+}
+
+.content {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+
+  font-size: larger;
+  border-radius: 8px;
+  margin: 20px;
+}
+
+.content h1{
+  font-size: 42px;
+  color: #070707;
+  font-family:'Times New Roman', Times, serif;
+}
+.welcomeMessage {
+  text-align: center;
+  font-size: 24px;
+  color: #333;
+  margin: 0;
+}
