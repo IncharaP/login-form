@@ -1,0 +1,270 @@
+html, body {
+  height: 100%;
+  margin: 1px;
+  padding: 0;
+}
+
+.userWelcomeContainer {
+  background-size: cover;
+  background-position: center;
+  min-height: 100vh; /* Ensures the background covers the entire viewport height */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+margin-top: 10px;
+  text-align: center;
+  margin: 5px;
+  background-color: rgb(231, 191, 191);
+}
+
+.header {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  padding: 10px 20px;
+  background-color: rgb(237, 144, 144);
+  margin-top: 20px;
+
+}
+
+.navbar {
+  display: flex;
+}
+
+.navLinks {
+  list-style-type: none;
+  display: flex;
+  padding: 0;
+  margin: 0;
+}
+
+.navLink {
+  text-decoration: none;
+  color: #ededed;
+  padding: 10px 15px;
+  border-radius: 4px;
+  font-size: 17px;
+  transition: background-color 0.3s ease;
+}
+
+.navLink:hover {
+  background-color: #5c93cb;
+}
+
+.logoutButton {
+  background-color: #dc3545;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.logoutButton:hover {
+  background-color: #c82333;
+}
+
+/* UserWelcome.module.css */
+/* UserWelcome.module.css */
+
+/* UserWelcome.module.css */
+.banner {
+  text-align: center;
+  margin: 30px 0;
+  background-color: rgb(238, 222, 222);
+  padding: 20px; /* Add some padding inside the banner */
+  border-radius: 8px; /* Rounded corners for the banner */
+}
+
+.bannerSection {
+  display: flex;
+  flex-wrap: nowrap; /* Prevent wrapping of videos to the next line */
+  overflow-x: auto; /* Enable horizontal scrolling if needed */
+  gap: 20px; /* Space between videos */
+  height: 600px; /* Height for the banner section */
+  align-items: center; /* Center videos vertically */
+  padding: 0;
+}
+
+.bannerVideoWrapper {
+  flex: 1; /* Each video takes up an equal portion of the banner section */
+  height: 100%; /* Fill the height of the banner section */
+  max-width: 100%; /* Ensure video does not exceed container width */
+  overflow: hidden; /* Hide overflow */
+  position: relative; /* Position for proper video placement */
+  border-radius: 8px; /* Rounded corners for each video */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Optional shadow for better appearance */
+}
+
+.bannerVideoContent {
+  width: 100%; /* Ensure the video covers the container width */
+  height: 100%; /* Ensure the video covers the container height */
+  object-fit: cover; /* Maintain aspect ratio and cover the container */
+}
+
+
+.welcomeMessageContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0px auto;
+  position: relative;
+  color: rgb(63, 66, 67);
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.6);
+}
+
+.welcomeMessage {
+  font-size: 60px;
+  font-weight: bold;
+  color: rgb(247, 21, 123);
+  font-family: 'Roboto', sans-serif; 
+  text-align: center;
+}
+
+.parentContainer {
+  display: grid;
+  place-items: center; /* Center both horizontally and vertically */
+  height: 100vh; /* Full viewport height */
+  background-color: #e0e0e0; /* Optional: for visibility */
+}
+
+.resinInfoContainer {
+  width: 80%; /* Adjust as needed */
+  max-width: 800px; /* Optional: to prevent too wide a container */
+  padding: 20px; /* Padding inside the container */
+  background-color: #f9f9f9; /* Light background color */
+  border-radius: 8px; /* Rounded corners */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+  display: flex;
+  flex-direction: column;
+  align-items: center; /* Center items horizontally within the container */
+  text-align: center; /* Center text within the container */
+}
+
+
+.resinInfoTitle {
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+
+.slideshow {
+  margin-bottom: 20px;
+}
+
+.slideWrapper {
+  text-align: center;
+}
+
+.slideshowImage {
+  width: 600px;
+  height: auto;
+  border: 1px solid #ddd;
+}
+
+.resinInfoText {
+  font-size: 16px;
+  margin-bottom: 20px;
+}
+
+.resinInfoList {
+  list-style-type: disc;
+  margin-left: 20px;
+}
+
+
+.content {
+  padding: 20px;
+}
+
+.imageGallery {
+  text-align: center;
+  margin: 40px 0;
+  background-color: rgb(238, 222, 222) ;
+  margin-bottom: 10px;
+
+}
+.imageGallery h2 {
+  font-size: 24px; /* Optional: adjust the font size */
+  color: #333; /* Optional: set a color for the <h2> */
+  text-align: center; /* Optional: center-align the <h2> */
+}
+
+
+.imageGrid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); /* Increase min size */
+  gap: 20px;
+  padding: 10px;
+}
+
+.imageItem {
+  position: relative;
+  cursor: pointer;
+  width: 100%;
+  height: 500px; /* Increase height */
+  background-size: cover;
+  background-position: center;
+  border-radius: 8px;
+  transition: transform 0.3s ease;
+}
+
+.imageItem:hover {
+  transform: scale(1.05);
+}
+
+.image1 {
+  background-image: url('/src/assets/image1.jpg');
+}
+
+.image2 {
+  background-image: url('/src/assets/image2.jpg');
+}
+
+.image3 {
+  background-image: url('/src/assets/image3.jpg');
+}
+
+.image4 {
+  background-image: url('/src/assets/image4.jpg');
+}
+.image5 {
+  background-image: url('/src/assets/image5.jpg');
+}
+.image6 {
+  background-image: url('/src/assets/image6.jpg');
+}
+.image7 {
+  background-image: url('/src/assets/image7.jpg');
+}
+.image8 {
+  background-image: url('/src/assets/image8.jpg');
+}
+
+.imageOverlay {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 100%;
+  width: 100%;
+  opacity: 0;
+  transition: .5s ease;
+  background-color: rgba(0, 0, 0, 0.5);
+  border-radius: 8px;
+}
+
+.imageItem:hover .imageOverlay {
+  opacity: 1;
+}
+
+.imageOverlay p {
+  color: white;
+  font-size: 20px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
