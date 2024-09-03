@@ -1,0 +1,268 @@
+.userOrdersPage {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+  min-height: 100vh;
+  font-family: Arial, sans-serif;
+  background-color: rgb(223, 237, 230);
+}
+.header {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  padding: 20px 20px; /* Consistent padding */
+  background-color: rgb(67, 68, 67);
+  margin: 0; /* Ensure no margin around the header */
+  width: 100%; /* Ensure the header spans the full width */
+  position: fixed; /* Fix the header at the top */
+  top: 0; /* Ensure it starts from the very top */
+  left: 0; /* Align to the left edge of the viewport */
+  z-index: 1000;
+
+}
+
+.navbar {
+  display: flex;
+  align-items: center;
+}
+
+.navLinks {
+  list-style-type: none;
+  display: flex;
+  padding: 0;
+  margin: 0;
+}
+
+.navLink {
+  text-decoration: none;
+  color: #ededed;
+  padding: 10px 15px;
+  border-radius: 4px;
+  font-size: 17px;
+  transition: background-color 0.3s ease;
+}
+
+.navLink:hover {
+  color: #d83820;
+}
+
+.logoutButton {
+  background-color: #dc3545;
+color: white;
+border: none;
+padding: 10px 20px;
+border-radius: 4px;
+cursor: pointer;
+transition: background-color 0.3s ease;
+margin-right: 30px;
+}
+
+.logoutButton:hover {
+  background-color: #c82333;
+}
+  .cartItemsContainer {
+    display: grid; /* Use grid layout for columns */
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr)); /* Responsive columns */
+    gap: 20px; /* Space between items */
+    margin:10px;
+  
+  }
+  
+  .cartPage{
+    margin-top: 90px;
+  }
+
+  .cartItemBox {
+    display: flex;
+    flex-direction: column;
+    border: 1px solid #ddd;
+    padding: 10px;
+    border-radius: 4px;
+    background-color: #fff;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Optional shadow for better visual separation */
+  }
+  
+  .cartItemImage {
+    width: 100%;
+    height: 200px; /* Fixed height for all images */
+    object-fit: cover; /* Ensures image covers the box without distortion */
+    margin-bottom: 10px; /* Space between image and details */
+  }
+  
+  .cartItemDetails {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .cartItemDetails h3 {
+    margin: 0 0 10px;
+  }
+  
+  .cartItemDetails p {
+    margin: 5px 0;
+  }
+  
+  .buttonGroup {
+    display: flex;
+    gap: 10px; /* Adjust spacing between buttons as needed */
+    margin-top: 10px; /* Space between product details and buttons */
+  }
+  
+  .removeButton, .buyNowButton {
+    padding: 8px 16px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 14px;
+  }
+  
+  .removeButton {
+    background-color: #ff6b6b; /* Red background for remove button */
+    color: white;
+  }
+  
+  .buyNowButton {
+    background-color: #4caf50; /* Green background for buy now button */
+    color: white;
+  }
+  
+  .orderModal {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .orderModalContent {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 4px;
+    width: 400px;
+    max-width: 100%;
+  }
+  
+  .orderModalContent h3 {
+    margin-top: 0;
+  }
+  
+  .orderModalContent label {
+    display: block;
+    margin: 10px 0;
+  }
+  
+  .orderModalContent input,
+  .orderModalContent select {
+    width: 100%;
+    padding: 8px;
+    margin-top: 5px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+  }
+  
+  .confirmButton {
+    background-color: #3498db;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    border-radius: 4px;
+    margin-right: 10px;
+  }
+  
+  .cancelButton {
+    background-color: #e74c3c;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    border-radius: 4px;
+  }
+  
+  .notification {
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    background-color: #333;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 4px;
+    display: flex;
+    align-items: center;
+  }
+  
+  .notification p {
+    margin: 0;
+    margin-right: 10px;
+  }
+  
+  .notification button {
+    background-color: transparent;
+    color: white;
+    border: none;
+    cursor: pointer;
+    font-size: 16px;
+  }
+  
+
+  /* src/pages/Cart.module.css */
+
+/* Existing styles... */
+
+.buyNowButton {
+    background-color: #3498db;
+    color: white;
+    border: none;
+    padding: 8px 16px;
+    cursor: pointer;
+    border-radius: 4px;
+  }
+  
+  .orderModal {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .orderModalContent {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    width: 90%;
+    max-width: 600px;
+  }
+  
+  .confirmButton {
+    background-color: #2ecc71;
+    color: white;
+    border: none;
+    padding: 8px 16px;
+    cursor: pointer;
+    border-radius: 4px;
+    margin-right: 10px;
+  }
+  
+  .cancelButton {
+    background-color: #e74c3c;
+    color: white;
+    border: none;
+    padding: 8px 16px;
+    cursor: pointer;
+    border-radius: 4px;
+  }
+  
+  .orderModalContent p {
+    margin: 5px 0;
+  }
+  

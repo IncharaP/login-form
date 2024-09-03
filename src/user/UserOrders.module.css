@@ -1,0 +1,105 @@
+.userOrdersPage {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    min-height: 100vh;
+    font-family: Arial, sans-serif;
+    background-color: rgb(223, 237, 230);
+  }
+  .header {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    padding: 20px 20px; /* Consistent padding */
+    background-color: rgb(67, 68, 67);
+    margin: 0; /* Ensure no margin around the header */
+    width: 100%; /* Ensure the header spans the full width */
+    position: fixed; /* Fix the header at the top */
+    top: 0; /* Ensure it starts from the very top */
+    left: 0; /* Align to the left edge of the viewport */
+    z-index: 1000;
+  
+  }
+  
+  .navbar {
+    display: flex;
+    align-items: center;
+  }
+  
+  .navLinks {
+    list-style-type: none;
+    display: flex;
+    padding: 0;
+    margin: 0;
+  }
+  
+  .navLink {
+    text-decoration: none;
+    color: #ededed;
+    padding: 10px 15px;
+    border-radius: 4px;
+    font-size: 17px;
+    transition: background-color 0.3s ease;
+  }
+  
+  .navLink:hover {
+    color: #d83820;
+  }
+  
+  .logoutButton {
+    background-color: #dc3545;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  margin-right: 30px;
+  }
+  
+  .logoutButton:hover {
+    background-color: #c82333;
+  }
+  
+  .ordersPage{
+    margin-top: 90px;
+   
+  }
+  .ordersTableContainer {
+    display: flex;
+    justify-content: center; /* Center the table horizontally */
+    width: 100%; /* Ensure container takes full width */
+  }
+  
+  .ordersTable {
+    width: 90%;
+    border-collapse: collapse;
+    margin-top: 20px;
+  }
+  
+  .ordersTable th, .ordersTable td {
+    border: 1px solid #f7f3f3;
+    padding: 8px;
+    text-align: center;
+  }
+  
+  .ordersTable th {
+    background-color: #f2f2f2;
+  }
+  
+  
+  
+  .orderImage {
+    width: 100px; /* Fixed width */
+    height: 100px; /* Fixed height */
+    object-fit: cover; /* Cover the image area, cropping if necessary */
+    border-radius: 5px;
+  }
+
+  .totalPriceContainer {
+    margin-top: 20px;
+    text-align: center;
+    font-weight: bold;
+    font-size: 1.2em;
+  }
